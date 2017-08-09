@@ -103,45 +103,6 @@ body, html {
     padding: 16px;
 }
  
-.button {
-  border-radius: 4px;
-  background-color: #88FF4C;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  height: 324px
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
- }
 </style>
  
  
@@ -236,7 +197,49 @@ function showSlides(n) {
 }
 </script>
 
-<button class="button"><span>News</span></button>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://environmentgwc.github.io/about.html"><img src="/w3images/mountains.jpg" alt="About" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>About</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://environmentgwc.github.io/news.html"><img src="/w3images/lights.jpg" alt="News" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>News</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="https://environmentgwc.github.io/petitions.html"><img src="/w3images/nature.jpg" alt="Petitions" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Petitions</b></p>
+      </div>
+    </div>
+  </div>
+
+ <!--Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://environmentgwc.github.io/events.html"><img src="/w3images/mountains.jpg" alt="Events" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Events</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://environmentgwc.github.io/organizations.html"><img src="/w3images/lights.jpg" alt="Organizations" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Organizations</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="https://environmentgwc.github.io/petitions.html"><img src="/w3images/nature.jpg" alt="Petitions" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>What Can You Do?</b></p>
+      </div>
+    </div>
+  </div>
  
 </body>
 </html>
