@@ -102,9 +102,49 @@ body, html {
 .w3-bar .w3-button {
     padding: 16px;
 }
-</style>
-<body>
+ 
+.button {
+  border-radius: 4px;
+  background-color: #88FF4C;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  height: 324px
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+</style>
+ 
+ 
+<body>
 <!-- Navbar that sticks on top -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2" id="myNavbar">
@@ -195,5 +235,7 @@ function showSlides(n) {
 }
 </script>
 
+<button class="button"><span>News</span></button>
+ 
 </body>
 </html>
