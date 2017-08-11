@@ -11,14 +11,18 @@
  .w3-bar .w3-button {
     padding: 16px;
 }
- where {
+ .where {
   text-align: center;
   font-family:Raleway,sans-serif;
  }
- h1 {
+ .h1 {
   float: center;
   font-size: 36px;
   font-family:Raleway,sans-serif;
+ }
+
+.select {
+    position: absolute;
  }
 </style>
  
@@ -59,15 +63,18 @@
  <h1> EVENTS
  </h1>
 
- <select class = "where" style = "text-align:center">
-  <option value = "Northeast">Northeast</option>
-  <option value = "South">South</option>
-  <option value = "Midwest">Midwest</option>
-  <option value = "West">West</option>
-  <option value = "Not USA">Non-USA</option>
- </select>
+ <div class = "where">
+    <select class = "select">
+      <option value = "Northeast">Northeast</option>
+      <option value = "South">South</option>
+      <option value = "Midwest">Midwest</option>
+      <option value = "West">West</option>
+      <option value = "Not USA">Non-USA</option>
+    </select>
+</div>
   
  
+
  </body>
  
  </html>
