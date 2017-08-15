@@ -82,15 +82,84 @@
 
   <br></br>
 
-<--!Page formatting-->
+<!-- Page formatting-->
  <div class="w3-content w3-padding" style="max-width:1564px">
+  
+ 
+   
+<!--Slideshow-->
+<div class="w3-display-container mySlides">
+  <img src="img_fjords.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-small w3-container w3-padding-8 w3-black"> <a href="https://www.google.com">
+    <h4 style= "font-family:'Raleway', Sans-Serif;">Title of the Article</h4></a>
+    <p style= "font-family:'Raleway', Sans-Serif;">Description of the Article in one sentence</p>
+  </div>
+</div>
 
-  <--!Websites to Visit Formatting -->
+<div class="w3-display-container mySlides">
+  <img src="img_fjords.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-small w3-container w3-padding-8 w3-black"> <a href="https://www.google.com">
+    <h4 style= "font-family:'Raleway', Sans-Serif;">Title of the Article</h4></a>
+    <p style= "font-family:'Raleway', Sans-Serif;">Description of the Article in one sentence</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_fjords.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-small w3-container w3-padding-8 w3-black"> <a href="https://www.google.com">
+    <h4 style= "font-family:'Raleway', Sans-Serif;">Title of the Article</h4></a>
+    <p style= "font-family:'Raleway', Sans-Serif;">Description of the Article in one sentence</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_fjords.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-small w3-container w3-padding-8 w3-black"> <a href="https://www.google.com">
+    <h4 style= "font-family:'Raleway', Sans-Serif;">Title of the Article</h4></a>
+    <p style= "font-family:'Raleway', Sans-Serif;">Description of the Article in one sentence</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_fjords.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-small w3-container w3-padding-8 w3-black"> <a href="https://www.google.com">
+    <h4 style= "font-family:'Raleway', Sans-Serif;">Title of the Article</h4></a>
+    <p style= "font-family:'Raleway', Sans-Serif;">Description of the Article in one sentence</p>
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-gray" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-gray" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <!-- Websites to Visit Formatting -->
+ <div class="w3-content w3-display-container">
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
   </div>
    
-<--!Websites to Visit -->
+<!--Websites to Visit -->
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
